@@ -32,7 +32,7 @@ module.exports = {
 
         const banimento = new MessageEmbed()
             .setColor(process.env.COLOR)
-            .setAuthor({ name: `${interaction.guild.name} - Banimento`, iconURL: interaction.guild.iconURL({ dybanic: true }) })
+            .setAuthor({ name: `${interaction.guild.name} - Banimento`, iconURL: interaction.guild.iconURL({ dynamic: true }) })
             .addFields(
                 { name: `🔨 Autor do Banimento`, value: `${interaction.user} \`(${interaction.user.id})\``, inline: false },
                 { name: `👤 Usuário Banido`, value: `${user} \`(${user.id})\``, inline: false },
