@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js")
-const ms = require("ms") // npm i ms
+const ms = require("ms")
 
 
 module.exports = {
@@ -48,7 +48,7 @@ module.exports = {
 
         const castigado = new MessageEmbed()
             .setColor(process.env.COLOR)
-            .setAuthor({ name: `${interaction.guild.name} - Castigo`, iconURL: interaction.guild.iconURL({ dybanic: true }) })
+            .setAuthor({ name: `${interaction.guild.name} - Castigo`, iconURL: interaction.guild.iconURL({ dynamic: true }) })
             .addFields(
                 { name: `🔨 Autor`, value: `${interaction.user} \`(${interaction.user.id})\``, inline: false },
                 { name: `👤 Usuário Castigado`, value: `${user} \`(${user.id})\``, inline: false },
