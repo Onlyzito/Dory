@@ -32,7 +32,7 @@ module.exports = {
 
         const expulsao = new MessageEmbed()
             .setColor(process.env.COLOR)
-            .setAuthor({ name: `${interaction.guild.name} - Expulsão`, iconURL: interaction.guild.iconURL({ dybanic: true }) })
+            .setAuthor({ name: `${interaction.guild.name} - Expulsão`, iconURL: interaction.guild.iconURL({ dynamic: true }) })
             .addFields(
                 { name: `🔨 Autor da Expulsão`, value: `${interaction.user} \`(${interaction.user.id})\``, inline: false },
                 { name: `👤 Usuário Expulso`, value: `${user} \`(${user.id})\``, inline: false },
