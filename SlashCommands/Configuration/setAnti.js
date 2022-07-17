@@ -4,6 +4,8 @@ const emoji = require('../../Utils/emojis');
 module.exports = {
   name: "setanti",
   description: "[⚙] Configura o AntiFake.",
+  userPermissions: ["MANAGE_MESSAGES"],
+  botPermissions: ["MANAGE_MESSAGES"],
   options: [
     {
       name: "dias",
