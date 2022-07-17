@@ -6,6 +6,8 @@ const emoji = require('../../Utils/emojis');
 module.exports = {
     name: "timeout",
     description: '[🛡️] Coloque um usuário de castigo.',
+    userPermissions: ["DEAFEN_MEMBERS", "MUTE_MEMBERS"],
+    botPermissions: ["DEAFEN_MEMBERS", "MUTE_MEMBERS"],
     options: [{
         name: 'usuario',
         description: 'Selecione/insira o ID do usuário que deseja colocar de castigo.',
