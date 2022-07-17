@@ -4,6 +4,8 @@ const emoji = require('../../Utils/emojis');
 module.exports = {
     name: 'ban',
     description: '[🛡️] Bane um usuário do servidor.',
+    userPermissions: ["BAN_MEMBERS"],
+    botPermissions: ["BAN_MEMBERS"],
     options: [{
         name: 'usuario',
         type: 'USER',
