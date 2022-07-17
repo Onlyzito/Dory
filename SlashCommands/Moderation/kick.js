@@ -4,6 +4,8 @@ const emoji = require('../../Utils/emojis');
 module.exports = {
     name: 'kick',
     description: '[🛡️] Expulsa um usuário do servidor.',
+    userPermissions: ["KICK_MEMBERS"],
+    botPermissions: ["KICK_MEMBERS"],
     options: [{
         name: 'usuario',
         type: 'USER',
