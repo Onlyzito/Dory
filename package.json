@@ -1,0 +1,22 @@
+{
+  "name": "dory",
+  "version": "0.0.1",
+  "description": "Una botita medíocre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["discord", "bot", "discord.js template", "template", "dory", "only", "discord.js"],
+  "author": "! Only",
+  "license": "MIT",
+  "homepage": "https://github.com/Onlyzito",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dayjs": "^1.11.3",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1",
+    "glob": "^7.2.0",
+    "mongoose": "^6.4.2",
+    "ms": "^2.1.3"
+  }
+}
