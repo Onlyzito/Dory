@@ -18,7 +18,7 @@
 
 # 🏆 Créditos
 #### [Eu](https://github.com/Onlyzito) por ter feito boa parte das coisas.<br/>
-#### [C1appy](https://github.com/C1appy) foi onde peguei a soure base.<br/>
+#### [C1appy](https://github.com/C1appy) foi onde peguei a source base.<br/>
 #### [Splinter](https://github.com/zSpl1nterUS/) foi onde peguei boa parte dos comandos e schemas.
 
 # 🔒 Finalização
