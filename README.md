@@ -6,7 +6,7 @@
 
 # 💻 Instalação
 1. Crie o BOT em [Discord Developers](https://discord.com/developers/)
-2. Crie o banco de dados em [Mongoose](https://www.mongodb.com/).
+2. Crie o banco de dados em [Mongodb](https://www.mongodb.com/).
 3. Tenha certeza que os requisitos estão corretos.
 4. Tenha certeza que o 1 - 2 passo estão feitos.
 5. Clone ou baixe os arquivos `git clone https://github.com/Onlyzito/Dory`
