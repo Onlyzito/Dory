@@ -6,6 +6,7 @@ const { inspect } = require("util");
 client.on("error", (err) => {
   const a = client.channels.cache.get(process.env.ERROR);
   console.log(chalk.yellow("——————————[ERROR]——————————\n") + err);
+  if(!a) return;
   const ErrorEmbed = new MessageEmbed()
     .setTitle("Error")
     .setURL("https://discordjs.guide/popular-topics/errors.html#api-errors")
@@ -24,6 +25,7 @@ process.on("unhandledRejection", (reason, p) => {
     reason,
     p
   );
+  if(!b) return;
   const unhandledRejectionEmbed = new MessageEmbed()
     .setTitle("Unhandled Rejection/Catch")
     .setURL("https://nodejs.org/api/process.html#event-unhandledrejection")
@@ -38,6 +40,9 @@ process.on("unhandledRejection", (reason, p) => {
     )
 
     .setTimestamp();
+    /*if(!b){
+      return console.log(unhandledRejectionEmbed)
+    }*/
   return b.send({
     embeds: [unhandledRejectionEmbed],
   });
@@ -49,6 +54,7 @@ process.on("uncaughtException", (err, origin) => {
     err,
     origin
   );
+  if(!c) return;
   const uncaughtExceptionEmbed = new MessageEmbed()
     .setTitle("Uncaught Exception/Catch")
     .setColor("#2F3136")
@@ -74,6 +80,7 @@ process.on("uncaughtExceptionMonitor", (err, origin) => {
     err,
     origin
   );
+  if(!d) return;
   const uncaughtExceptionMonitorEmbed = new MessageEmbed()
     .setTitle("Uncaught Exception Monitor")
     .setColor("#2F3136")
@@ -90,7 +97,6 @@ process.on("uncaughtExceptionMonitor", (err, origin) => {
     )
 
     .setTimestamp();
-
   return d.send({
     embeds: [uncaughtExceptionMonitorEmbed],
   });
@@ -103,6 +109,7 @@ process.on("multipleResolves", (type, promise, reason) => {
     promise,
     reason
   );
+  if(!e) return;
   const multipleResolvesEmbed = new MessageEmbed()
     .setTitle("Multiple Resolves")
     .setURL("https://nodejs.org/api/process.html#event-multipleresolves")
