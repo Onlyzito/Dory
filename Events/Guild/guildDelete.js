@@ -3,6 +3,9 @@ const client = require("../../index");
 
 client.on("guildDelete", async (guild) => {
   try {
+    
+    const very = client.channels.cache.get(process.env.LOGS);
+    if(!very) return;
 
     const owner = await guild.fetchOwner()
 
@@ -41,7 +44,7 @@ client.on("guildDelete", async (guild) => {
       .setTimestamp()
 
 
-    client.channels.cache.get(process.env.LOGS).send({ embeds: [joined] })
+    very.send({ embeds: [joined] })
   } catch (err) {
     console.log(err);
   }
